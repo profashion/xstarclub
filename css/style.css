@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .promo-wrapper-background {
-    background-image: url('../img/DSC05517-min.jpg');
+    background-image: url('../img/promo-background-min.jpg');
 }
 
 .promo-wrapper-foreground {
@@ -350,6 +350,10 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
+}
+
+.advantages-foto {
+    width: 100%;
 }
 
 
