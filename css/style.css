@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .promo-content {
     position: absolute;
-    top: 0;
+    top: -30%;
     bottom: 0;
     right: 10%;
     margin: auto;
@@ -547,7 +547,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .subscription {
     width: 100%;
-    padding: 50px 0px;
+    padding: 50px 0px 0px 0px;
 }
 
 
@@ -627,7 +627,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 30px;
     border: 1px solid #eff0f4;
     position: relative;
-    margin-bottom: 130px;
 }
 
 .subscription-special::after {
@@ -638,8 +637,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.price-empty {
+    margin-bottom: 170px;
+    width: 100%;
+}
+
+
+.price-list-empty {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-item-empty::before {
+    color: #252525;
+}
+
 /* --------------------------------------------------------------------- */
 
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #2525250a;
+    padding: 10px 0px;
+    font-size: 12px;
+    margin-top: 100px
+}
+
+.footer-copyrights-year {
+    font-weight: 600;
+}
 
 /* --------------------------------------------------------------------- */
 
@@ -705,6 +733,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .social-photos {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -719,6 +748,17 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex: 1;
             flex: 1;
 }
+
+.social-photos::before {
+    content: 'Подписывайтесь и следите за акциями в наших соцсетях';
+    position: absolute;
+    top: 0;
+    padding: 10px 0px;
+    font-weight: 600;
+    color: #dd042b;
+    max-width: 350px;
+}
+
 .social-photo {
     -webkit-box-shadow: 0 0px 33px 4px rgba(14, 21, 47, 0.32),0 -2px 6px rgba(14, 21, 47, 0.19);
     box-shadow: 0 0px 33px 4px rgba(14, 21, 47, 0.32),0 -2px 6px rgba(14, 21, 47, 0.19);
