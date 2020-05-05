@@ -158,11 +158,15 @@ h1, h2, h3, h4, h5, h6 {
 /* --------------------------------------------------------------------- */
 
 .menu {
-    position: absolute;
+    position: sticky;
+    background: #fff;
+    padding-bottom: 7px;
     top: 0;
     z-index: 10000;
     width: 100%;
-    padding-top: 15px;  
+    padding-top: 7px;
+    -webkit-box-shadow: 0 0px 2px 15px #eff0f4;
+    box-shadow: 0 0px 15px 2px #eff0f4;
 }
 
 
@@ -283,7 +287,6 @@ h1, h2, h3, h4, h5, h6 {
 .about-text-sentence {
     text-indent: 30px;
     margin-bottom: 5px;
-    color: #25252582;
 }
 
 
@@ -410,7 +413,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .advantages-icon-ul {
-    color: #7b7878;
     padding: 0px 25px;
     list-style: none;
 }
@@ -616,8 +618,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .subscription-set, .subscription-price, .subscription-time {
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     margin: 10px 10px;
 }
 
@@ -935,11 +936,27 @@ h1, h2, h3, h4, h5, h6 {
         transition: 0.5s;
     }
     .faq-question {
-        font-family: 'Oswald', sans-serif;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
     }
     .faq-answer {
         font-size: 12.5px;
     }
     /* --------------------------------------------------------------------- */
+
+
+
+    @media (max-width: 640px) {
+
+        .wrapper-menu, .wrapper {
+            width: 100%;
+        }
+
+
+
+    }
+
+
+
+
+
